@@ -20,7 +20,7 @@ Each response from `api.lorcana-api.com` is returned in UTF-8.
 
 Each response can consist of up to 1000 cards at a time, though this number be reduced in the future.
 
-Want to get to fetching? Check out the [docs for fetching cards](localhost:3000/docs)
+Want to get to fetching? Check out the [docs for fetching cards](/docs/tutorial-basics/fetching-cards)
 
 
 

@@ -28,6 +28,7 @@ It could look something like this:
 ```javascript
 search=cost>=3;color=ruby
 ```
+[See how this looks](https://api.lorcana-api.com/cards/fetch?search=cost%3E%3D3%3Bcolor%3Druby)
 
 Now we get all of the cards which are ruby have an ink cost greater than 3!
 
@@ -38,6 +39,7 @@ Our URL should now look something like this:
 ```javascript
 search=cost>=3;|color=ruby
 ```
+[See how this looks](https://api.lorcana-api.com/cards/fetch?search=%3Dcost%3E%3D3%3B%7Ccolor%3Druby)
 
 #### Using parenthesis for order of operation
 
@@ -53,12 +55,14 @@ Now it will turn looking kind of like this:
 ```ts
 search=cost>=3;(color=ruby;|color=amber;)
 ```
+[See how this looks](https://api.lorcana-api.com/cards/fetch?search=%3Dcost%3E%3D3%3B%28color%3Druby%3B%7Ccolor%3Damber%3B%29)
 
 Please be aware that if you have another clause coming after a right parenthesis, it will need it's own semicolon, it can't borrow off the one being used by the right parenthesis. 
 Kind of like this: 
 ```js
 search=cost>=3;(color=ruby;|color=amber;);set_num=2
 ```
+[See how this looks](https://api.lorcana-api.com/cards/fetch?search=%3Dcost%3E%3D3%3B%28color%3Druby%3B%7Ccolor%3Damber%3B%29%3Bset_num%3D2)
 
 ### Final reminders
 
